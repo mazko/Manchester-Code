@@ -3,7 +3,7 @@
 
 extern "C"
 {
-	#include "../../../../manchester/src/tx/Man_Encode.c"
+	#include "../../../src/tx/Man_Encode.c"
 }
 
 class IManEncode {

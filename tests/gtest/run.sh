@@ -26,10 +26,10 @@ fi
 
 #compile tests
 
-g++ -g -I$GTEST_HOME -I$GTEST_HOME/include -I$GMOCK_HOME -I$GMOCK_HOME/include -pthread main.cpp src/manchester/Man_Encode.cpp src/manchester/Man_Decode.cpp libgmock.a
+g++ -g -I$GTEST_HOME -I$GTEST_HOME/include -I$GMOCK_HOME -I$GMOCK_HOME/include -pthread main.cpp src/manchester/Man_Encode.cpp src/manchester/Man_Decode.cpp libgmock.a || { echo 'Tests compile error'; exit 1;}
 
 #run tests
 
-./a.out
+./a.out || { echo 'Tests run error'; exit 2;}
 
 rm -f a.out

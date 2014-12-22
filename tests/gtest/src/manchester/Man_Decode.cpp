@@ -3,7 +3,7 @@
 
 extern "C"
 {
-	#include "../../../../manchester/src/rx/Man_Decode.c"
+	#include "../../../src/rx/Man_Decode.c"
 }
 
 class IManDecode {
